@@ -22,12 +22,15 @@
     <link href="css/grayscale.css" rel="stylesheet">
 
   </head>
-
+<script>
+  function muteIt(){
+    document.getElementById('meme').muted = !document.getElementById('meme').muted;
+  }
+</script>
   <body id="page-top">
       <div id="player">
-          <audio controls autoplay hidden>
-           <source src="taskforce.mp3" type="audio/mpeg" id="meme">
-            
+          <audio controls autoplay hidden id="meme">
+           <source src="taskforce.mp3" type="audio/mpeg">
           </audio>
       </div>
     <!-- Navigation -->
@@ -52,7 +55,7 @@
           </ul>
         </div>
         <div class="mute">
-            <a href="#" onclick="document.getElementById('meme').muted = !document.getElementById('meme').muted"><img src="img/Audio-mute.png" alt="TASKFORCE" height="42"></a>
+            <a href="#" onclick="muteIt();"><img src="img/Audio-mute.png" alt="TASKFORCE" height="42"></a>
         </div>
       </div>
     </nav>
