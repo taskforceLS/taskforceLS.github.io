@@ -47,7 +47,7 @@ p {
 .team-member img {
   width: 225px;
   height: 225px;
-  border: 2px solid #808080;
+  border: 2px solid #fff;
 }
 
 .team-member h4 {
@@ -58,6 +58,7 @@ p {
 
 .team-member p {
   margin-top: 0;
+  font-size: 85%;
 }
 a {
   -webkit-transition: all 0.2s ease-in-out;
